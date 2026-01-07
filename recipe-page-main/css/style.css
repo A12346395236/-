@@ -1,0 +1,146 @@
+﻿
+body {
+    font-family: "Outfit";
+    font-size: 16px;
+    color: hsl(30, 10%, 34%);
+    margin: 0; 
+    
+}
+
+
+/* 1. 先確保圖片是滿版的 */
+.hero-img {
+    width: 100%;
+    display: block;
+}
+
+/* 2. 統一控制所有文字的左右間距 (padding) */
+/* 這裡的數值可以根據你想要的寬度調整，數值越小，文字行寬就越寬 */
+.content-wrapper {
+    padding: 40px 32px; /* 上下 40px，左右 32px */
+}
+
+/* 3. 修正表格寬度，讓它填滿 wrapper */
+.nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* 4. 針對粉色區塊的特別處理 */
+.PreparationTime {
+    background-color: hsl(330, 100%, 98%);
+    padding: 24px;
+    border-radius: 12px;
+    margin: 24px 0;
+}
+
+/* 修正 table 寬度，確保它在扣除 margin 後正常顯示 */
+.nutrition-table {
+    width: calc(100% - 60px);
+}
+
+/* 1. 移除原本凌亂的 margin 設定 */
+.content-wrapper, .PreparationTime, h2, ul, ol, hr, .nutrition-table, p {
+    margin-left: 0; 
+    margin-right: 0; 
+}
+
+/* 2. 在父容器統一設定左右留白 */
+.content-wrapper {
+    padding: 30px 40px; /* 上下 30px，左右 40px (這個數值可以按設計圖調整) */
+}
+
+/* 3. 確保表格寬度 100% 填滿文字區塊 */
+.nutrition-table {
+    width: 100%;
+}
+
+img {
+    width: 100%; /* 強制寬度填滿 */
+    display: block; /* 移除下方小縫隙 */
+    height: auto;
+}
+
+h1 {
+    font-family: "Young Serif";
+    font-size: 35px;
+    color: hsl(24, 5%, 18%);
+}
+
+h2 {
+    font-size: 25px;
+    color: hsl(14, 45%, 36%);
+}
+
+.Preparation {
+    font-size: 20px;
+    color: hsl(332, 51%, 32%);
+    margin-bottom: 15px;
+}
+
+.PreparationTime {
+    background-color: hsl(330, 100%, 98%);
+    padding: 20px;
+}
+p {
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 20px;
+}
+
+ol{
+    margin-bottom: 30px;
+}
+ol li {
+    margin-bottom: 15px;
+}
+
+
+
+/* 1. 移除最後一列的底線 */
+.nutrition-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* 2. 優化表格內部的細節 (建議調整) */
+.nutrition-table td {
+    padding: 12px 32px; /
+    border-bottom: 1px solid hsl(30, 18%, 87%); 
+}
+
+/* 3. 強化數值顯示 */
+.nutrition-table .value {
+    color: hsl(14, 45%, 36%); 
+    font-weight: 700; 
+    text-align: left;
+    padding-left: 32px; 
+}
+
+/* 4. 項目名稱樣式 */
+.nutrition-table .label {
+    color: hsl(30, 10%, 34%);
+ }
+
+@media screen and (min-width: 920px) {
+    body {
+        background-color: hsl(30, 54%, 90%);
+    }
+    main {
+        background-color: #ffffff;
+        width: 800px;
+        margin: 80px auto;
+        padding: 40px 45px;
+        border: solid 1px;
+
+        border-radius: 20px;
+    }
+    img {
+        border-radius: 20px;
+    }
+    h1 {
+        margin-top: -10px;
+    }
+
+}
